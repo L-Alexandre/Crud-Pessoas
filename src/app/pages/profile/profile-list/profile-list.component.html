@@ -1,0 +1,37 @@
+<div class="container">
+    <h1 class="mt-2">Pessoas</h1>
+
+     <table class="table">
+     <thead>
+       <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Perfil</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ativo</th>
+        <th scope="col">País</th>
+        <th scope="col">Experiência</th>
+        <th scope="col">Ações</th>
+       </tr>
+     </thead>
+     <tbody>
+      <tr *ngFor="let profile of profiles">
+        <th scope="row">{{ profile.id }}</th>
+        <td>{{ profile.name }}</td>
+        <td>{{ profile.role }}</td>
+        <td>{{ profile.age }}</td>
+        <td>{{ profile.email }}</td>
+        <td>{{ profile.isActive }}</td>
+        <td>{{ profile.country }}</td>
+        <td>{{ profile.experience }}</td>
+        <td>
+          <a class="btn btn-secondary btn-sm mx-2 mb-2" routerLink="/profile/edit/{{profile.id}}">Editar</a>
+          <a class="btn btn-danger btn-sm mb-2" (click)="profile.id && confirmDelete(profile.id)">Excluir</a>
+          
+     </tbody>
+   </table>
+
+   <a class="btn btn-dark" routerLink="/profile/create">Cadastrar</a>
+
+</div>

@@ -1,32 +1,34 @@
 {
   "profiles": [
     {
-      "id": "uq2e",
       "name": "Alice",
       "role": "admin",
       "age": 32,
-      "email": "alice@alice.com",
+      "email": "alice@example.com",
       "isActive": true,
       "country": "USA",
-      "experience": "Senior"
-    },
-    {
-      "id": "ed6f",
-      "name": "Meu nome",
-      "role": "admin",
-      "age": 29
+      "experience": "Senior",
+      "id": "ed6f"
     },
     {
       "id": "47fb",
-      "name": "Outro nome",
-      "role": "dba",
-      "age": 10
+      "name": "Bob",
+      "role": "user",
+      "age": 28,
+      "email": "bob@example.com",
+      "isActive": false,
+      "country": "Canada",
+      "experience": "Junior"
     },
     {
-      "id": "ce7a",
-      "name": "Lucas",
-      "role": "developer",
-      "age": 10
+      "name": "Charlie",
+      "role": "moderator",
+      "age": 35,
+      "email": "charlie@example.com",
+      "isActive": true,
+      "country": "UK",
+      "experience": "Mid-level",
+      "id": "uq2e"
     }
   ]
 }

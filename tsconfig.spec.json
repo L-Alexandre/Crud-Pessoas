@@ -12,3 +12,11 @@
     "src/**/*.d.ts"
   ]
 }
+
+
+
+
+/*
+Adicionar um input de <[{ngModel}]="example">  e tentar adicionar na hora de editar 
+o Crud selecionado da pessoa.
+*/
