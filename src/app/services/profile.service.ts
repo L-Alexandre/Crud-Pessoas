@@ -21,7 +21,7 @@ export class ProfileService {
   }
 
   atualizar(updateProfile: Profile): Observable<Profile>{
-    const url = '${this.api}/${updateProfile.id}';
+    const url = `${this.api}/${updateProfile.id}`;
     return this.http.put<Profile>(url, updateProfile);
   }
 
